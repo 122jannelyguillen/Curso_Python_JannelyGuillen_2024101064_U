@@ -1,9 +1,9 @@
 from flask import Flask, request, jsonify
-from cliente import verificar_cliente
+from cliente2 import verificar_cliente
 
 app = Flask(__name__)
 
-@app.route('/cliente', methods=['POST'])
+@app.route('/cliente2', methods=['POST'])
 def cliente():
     data = request.get_json()
     ci = data.get('ci')
