@@ -1,8 +1,8 @@
 from flask import Blueprint, request, jsonify
 
-login = Blueprint('cliente', __name__)
+cliente = Blueprint('cliente', __name__)
 
-@login.route('/cliente', methods=['POST'])
+@cliente.route('/cliente', methods=['POST'])
 def llamarServicioSet():
     ci = request.json.get('ci')
 
